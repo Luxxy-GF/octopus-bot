@@ -1,0 +1,28 @@
+{
+    "octopus": {
+        "url": "https://api.octopus.energy/v1",
+        "apiKey": "",
+        "unitregion": "",
+        "unitregion2": ""
+    },
+    "mater": {
+        "electricity": {
+            "MPAN": "",
+            "SERIAL": ""
+        },
+        "gas": {
+            "MPRN": "",
+            "SERIAL": ""
+        },
+        "currency": "£"
+    },
+    "bot": {
+        "prefix": "?",
+        "channel": {
+            "locktochannel": false,
+            "channelid": "your-channel-id",
+            "ownerid": "your-user-id"
+        },
+        "activity": ""
+    }
+}
