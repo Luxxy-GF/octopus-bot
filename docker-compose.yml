@@ -1,0 +1,16 @@
+version: "3"
+
+volumes:
+    influx_data: {}
+
+services:
+    influx:
+        image: influxdb:latest
+        volumes:
+            - influx_data:/var/lib/influxdb
+        ports:
+            - "8086:8086"
+        environment:
+            - INFLUXDB_DB=db0
+            - INFLUXDB_ADMIN_USER=admin
+            - INFLUXDB_ADMIN_PASSWORD=password123
