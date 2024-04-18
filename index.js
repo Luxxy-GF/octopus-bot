@@ -37,6 +37,8 @@ client.events = new Discord.Collection();
 
 require("./handlers/command_handler")(client);
 require("./handlers/event_handler")(client);
-require('./utils/influx/data');
+if (config.influx.enable){
+    require('./utils/influx/data');
+}
 
 client.login(process.env.TOKEN);
