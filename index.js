@@ -1,11 +1,6 @@
 require("dotenv").config();
 const Discord = require("discord.js");
 const { GatewayIntentBits, Partials } = require("discord.js");
-const { get_electricity } = require("./utils/octopus/get_electricity");
-
-const { InfluxDB, Point } = require("@influxdata/influxdb-client");
-const { toNanoDate } = require("influx")
-
 const config = require("./config.json");
 
 const client = new Discord.Client({

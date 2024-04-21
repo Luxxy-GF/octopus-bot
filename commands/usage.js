@@ -5,6 +5,7 @@ const { toCost } = require("../utils/bot/tocost");
 
 module.exports = {
     name: "usage",
+    description: "Shows your usage",
     aliases: [""],
     async run(client, message, args) {
         const electricity = await get_electricity();
