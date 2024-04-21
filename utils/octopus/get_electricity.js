@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-async function get_electricity(pageSize = 100) {
+async function get_electricity(pageSize = 48) {
     try {
         return (
             await axios({
